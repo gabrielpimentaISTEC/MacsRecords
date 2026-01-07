@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="checkoutTelefone" class="form-label">Telefone *</label>
-                                    <input type="tel" class="form-control" id="checkoutTelefone" required>
+                                    <input type="tel" class="form-control" id="checkoutTelefone" inputmode="numeric" pattern="[0-9]*" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="checkoutCidade" class="form-label">Cidade *</label>
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="checkoutCodigoPostal" class="form-label">Código Postal *</label>
-                                    <input type="text" class="form-control" id="checkoutCodigoPostal" required>
+                                    <input type="text" class="form-control" id="checkoutCodigoPostal" inputmode="numeric" pattern="[0-9]*" required>
                                 </div>
                             </div>
                         </form>
@@ -113,7 +113,7 @@
                             <div class="row">
                                 <div class="col-12 mb-3">
                                     <label for="numeroCartao" class="form-label">Número do Cartão *</label>
-                                    <input type="text" class="form-control" id="numeroCartao" maxlength="19" placeholder="1234 5678 9012 3456" required>
+                                    <input type="text" class="form-control" id="numeroCartao" maxlength="19" inputmode="numeric" pattern="[0-9 ]*" placeholder="1234 5678 9012 3456" required>
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label for="nomeCartao" class="form-label">Nome no Cartão *</label>
@@ -121,11 +121,11 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="validadeCartao" class="form-label">Validade (MM/AA) *</label>
-                                    <input type="text" class="form-control" id="validadeCartao" maxlength="5" placeholder="12/25" required>
+                                    <input type="text" class="form-control" id="validadeCartao" maxlength="5" inputmode="numeric" pattern="[0-9/]*" placeholder="12/25" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="cvvCartao" class="form-label">CVV *</label>
-                                    <input type="text" class="form-control" id="cvvCartao" maxlength="4" placeholder="123" required>
+                                    <input type="text" class="form-control" id="cvvCartao" maxlength="4" inputmode="numeric" pattern="[0-9]*" placeholder="123" required>
                                 </div>
                             </div>
 
@@ -185,12 +185,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const numeroInput = document.getElementById('numeroCartao');
     const nomeInput = document.getElementById('nomeCartao');
     const validadeInput = document.getElementById('validadeCartao');
+    const telefoneInput = document.getElementById('checkoutTelefone');
+    const codigoPostalInput = document.getElementById('checkoutCodigoPostal');
     
     numeroInput.addEventListener('input', (e) => {
-        // Formatar número cartão
-        let value = e.target.value.replace(/\s/g, '');
-        value = value.replace(/(.{4})/g, '$1 ').trim();
-        if (value.length > 19) value = value.substring(0, 19);
+        // formatar número do cartão em grupos de 4
+        let digits = e.target.value.replace(/\D/g, '');
+        if (digits.length > 16) digits = digits.substring(0, 16);
+        let value = digits.replace(/(.{4})/g, '$1 ').trim();
         e.target.value = value;
         atualizarCartaoVisual();
     });
@@ -212,6 +214,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     document.getElementById('cvvCartao').addEventListener('input', (e) => {
+        e.target.value = e.target.value.replace(/\D/g, '');
+    });
+
+    // Impedir letras em telefone e código postal
+    telefoneInput.addEventListener('input', (e) => {
+        e.target.value = e.target.value.replace(/\D/g, '');
+    });
+
+    codigoPostalInput.addEventListener('input', (e) => {
         e.target.value = e.target.value.replace(/\D/g, '');
     });
     
