@@ -22,7 +22,7 @@
       "precoVinil": 31.99,
       "precoCD": 17.99,
       "imagem": "https://upload.wikimedia.org/wikipedia/en/4/4d/Queen_A_Night_At_The_Opera.png",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/1GbtB4zTqAsyfZEsm1RZfx",
       "stock": 5,
       "descricao": "Clássico absoluto dos Queen, cheio de harmonias vocais, arranjos teatrais e a lendária 'Bohemian Rhapsody'."
     },
@@ -35,7 +35,7 @@
       "precoVinil": 26.99,
       "precoCD": 15.99,
       "imagem": "https://upload.wikimedia.org/wikipedia/en/5/5e/Mac_Miller_-_Swimming.png",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/5wtE5aLX5r7jOosmPhJhhk",
       "stock": 6,
       "descricao": "Um disco introspectivo e suave, que mistura rap e soul com letras sobre crescimento, amor-próprio e superação."
     },
@@ -48,7 +48,7 @@
       "precoVinil": 27.99,
       "precoCD": 16.99,
       "imagem": "https://upload.wikimedia.org/wikipedia/en/1/15/Mac_Miller_-_Circles.png",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/5sY6UIQ32GqwMLAfSNEaXb",
       "stock": 9,
       "descricao": "Projeto póstumo de tons melancólicos e melódicos, onde guitarras, pianos e grooves lentos acompanham reflexões pessoais."
     },
@@ -61,7 +61,7 @@
       "precoVinil": 32.99,
       "precoCD": 18.99,
       "imagem": "https://m.media-amazon.com/images/I/71pxGj4RoVS.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/4SZko61aMnmgvNhfhgTuD3",
       "stock": 11,
       "descricao": "Rap cheio de sintetizadores, refrões épicos e bangers de estádio, marcando a transição de Kanye para um som mais pop."
     },
@@ -74,7 +74,7 @@
       "precoVinil": 24.99,
       "precoCD": 12.99,
       "imagem": "https://upload.wikimedia.org/wikipedia/pt/e/e5/Circo_de_feras_xutos.jpeg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/5Ndj4wYxz8fNUbTPOGG9Tn",
       "stock": 10,
       "descricao": "Um dos discos mais marcantes do rock português, cheio de guitarras cruas, atitude e hinos geracionais."
     },
@@ -87,7 +87,7 @@
       "precoVinil": 28.99,
       "precoCD": 16.49,
       "imagem": "https://muzikercdn.com/uploads/products/4263/426304/main_7bd330d6.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/7iLuHJkrb9KHPkMgddYigh",
       "stock": 9,
       "descricao": "Disco-pop brilhante e dançável, com refrões contagiosos e produções polidas típicas da era dourada dos ABBA."
     },
@@ -100,7 +100,7 @@
       "precoVinil": 34.99,
       "precoCD": 19.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/FR/NR/ab/18/f6/16128171/1540-1/tsp20250212164135/The-Dark-Side-of-the-Moon-50th-Anniversary.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/4LH4d3cOWNNsVw41Gqt2kv",
       "stock": 5,
       "descricao": "Obra-prima do rock progressivo, com faixas ligadas entre si, ambiente psicadélico e letras sobre tempo, loucura e sociedade."
     },
@@ -113,7 +113,7 @@
       "precoVinil": 33.99,
       "precoCD": 19.49,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/6f/8a/0e/952943/1540-1/tsp20161027180620/Thriller.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/1C2h7mLntPSeVYciMRTF4a",
       "stock": 15,
       "descricao": "Álbum histórico que mistura pop, funk e R&B, recheado de singles icónicos que definiram a cultura pop dos anos 80."
     },
@@ -126,7 +126,7 @@
       "precoVinil": 31.99,
       "precoCD": 18.99,
       "imagem": "https://muzikercdn.com/uploads/products/4946/494640/main_11426369.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/4m2880jivSbbyEGAKfITCa",
       "stock": 12,
       "descricao": "Viagem retro-futurista pela disco, funk e eletrónica, com instrumentos orgânicos, grooves lentos e produção ao detalhe."
     },
@@ -140,7 +140,7 @@
       "precoVinil": 39.99,
       "precoCD": 18.99,
       "imagem": "https://muzikercdn.com/uploads/products/21350/2135028/thumb_d_gallery_base_507443cc.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/4a6NzYL1YHRUgx9e3YZI6I",
       "stock": 5,
       "descricao": "Disco conceptual de pop moderno, com histórias sobre palco, fama e vulnerabilidade, típico do storytelling da Taylor."
     },
@@ -153,7 +153,7 @@
       "precoVinil": 36.99,
       "precoCD": 17.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/6b/2b/05/338795/1545-6/tsp20160814202543/Greatest-Hits-Vol-I.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/3VWrUk4vBznMYXGMPc7dRB",
       "stock": 5,
       "descricao": "Coleção essencial com os maiores hinos dos Queen, perfeita para entrar no universo da banda numa só rodagem."
     },
@@ -166,7 +166,7 @@
       "precoVinil": 34.49,
       "precoCD": 16.99,
       "imagem": "https://muzikercdn.com/uploads/products/4334/433424/main_fd3c4a12.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/6dVIqQ8qmQ5GBnJ9shOYGE",
       "stock": 5,
       "descricao": "Rock alternativo denso e experimental, com guitarras atmosféricas e críticas a uma sociedade cada vez mais tecnológica."
     },
@@ -179,7 +179,7 @@
       "precoVinil": 32.49,
       "precoCD": 15.99,
       "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11GXtywFuYJpOFBUsF3750OB1U6JV7OFldA&s",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/3OxfaVgvTxUTy7276t7SPU",
       "stock": 5,
       "descricao": "Projeto de pop futurista e R&B, com batidas escuras, refrões marcantes e a estética cinematográfica típica de The Weeknd."
     },
@@ -192,7 +192,7 @@
       "precoVinil": 38.99,
       "precoCD": 18.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/2a/1c/13/1252394/1540-1/tsp20170711182433/DAMN-2LP.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/4eLPsYPBmXABThSJ821sqY",
       "stock": 5,
       "descricao": "Rap incisivo e direto, com beats modernos e letras sobre fé, ego, família e o peso da fama."
     },
@@ -205,7 +205,7 @@
       "precoVinil": 30.99,
       "precoCD": 14.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/a5/7a/56/5667493/1507-1.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/1ctUX6jooPNVVKA8T6uNkz",
       "stock": 5,
       "descricao": "Rock alternativo em português com poesia intensa, arranjos criativos e uma identidade muito própria."
     },
@@ -218,7 +218,7 @@
       "precoVinil": 35.99,
       "precoCD": 17.49,
       "imagem": "https://muzikercdn.com/uploads/products/5264/526433/main_f18217c1.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/3Qf4H3NYSp3BMIRe6WOyOA",
       "stock": 5,
       "descricao": "Compilação cheia de riffs explosivos, baladas poderosas e os maiores clássicos dos Guns N' Roses."
     },
@@ -231,7 +231,7 @@
       "precoVinil": 33.49,
       "precoCD": 16.49,
       "imagem": "https://muzikercdn.com/uploads/products/7493/749308/main_cbcfb81b.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/0JGOiO34nwfUdDrD612dOp",
       "stock": 5,
       "descricao": "Pop alternativo intimista, com produções minimalistas, vocais sussurrados e letras confessionais."
     },
@@ -244,7 +244,7 @@
       "precoVinil": 27.49,
       "precoCD": 13.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/d6/39/0c/801238/1540-1/tsp20170417164434/Hybrid-Theory.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/6PFPjumGRpZnBzqnDci6qJ",
       "stock": 5,
       "descricao": "Nu metal emblemático, que mistura guitarras pesadas, rap, melodias fortes e muita energia adolescente."
     },
@@ -257,7 +257,7 @@
       "precoVinil": 29.99,
       "precoCD": 14.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/c3/1d/60/6299075/1540-1.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/3C9SsgDQgFh4bQRdoQi3XS",
       "stock": 5,
       "descricao": "Rap português de intervenção, com letras politizadas, storytelling detalhado e instrumentais pesados."
     },
@@ -270,7 +270,7 @@
       "precoVinil": 34.49,
       "precoCD": 16.99,
       "imagem": "https://img.wook.pt/images/utopia-vinil-travis-scott/MXwyOTUxNzU1N3wyNTkzMzgxMnwxNzAxNDUyNzg3MDAw/500x",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/18NOKLkZETa4sWwLMIm0UZ",
       "stock": 5,
       "descricao": "Trap atmosférico e experimental, cheio de mudanças de beat, colaborações e ambientes cinematográficos."
     },
@@ -283,7 +283,7 @@
       "precoVinil": 32.99,
       "precoCD": 15.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/0a/f5/7a/8058122/1540-1.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/45ba6QAtNrdv6Ke4MFOKk9",
       "stock": 5,
       "descricao": "Álbum que mistura rap agressivo, soul e jazz, com produção rica e a estética viajante do Tyler."
     },
@@ -296,7 +296,7 @@
       "precoVinil": 31.99,
       "precoCD": 15.49,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/76/9d/6a/6987126/1507-1.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/6s84u2TUpR3wdUv4NgKA2j",
       "stock": 5,
       "descricao": "Pop adolescente com toques de rock e baladas emotivas, cheio de desabafos sobre relações e crescimento pessoal."
     },
@@ -309,7 +309,7 @@
       "precoVinil": 30.49,
       "precoCD": 14.99,
       "imagem": "https://muzikercdn.com/uploads/products/14642/1464203/main_b80ac3ee.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/5duyQokC4FMcWPYTV9Gpf9",
       "stock": 5,
       "descricao": "Um dos maiores álbuns de baladas dos últimos tempos, com vocais poderosos e letras sobre amor perdido."
     },
@@ -322,7 +322,7 @@
       "precoVinil": 28.99,
       "precoCD": 13.99,
       "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/54/c2/0e/967252/1540-1/tsp20161026150527/Pablo-honey-LP.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/3gBVdu4a1MMJVMy6vwPEb8",
       "stock": 5,
       "descricao": "Primeiro álbum dos Radiohead, com um som grunge/alternativo e o hit 'Creep' a liderar."
     },
@@ -335,7 +335,7 @@
       "precoVinil": 27.99,
       "precoCD": 13.49,
       "imagem": "https://muzikercdn.com/uploads/products/3733/373383/main_025916b5.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/5zi7WsKlIiUXv09tbGLKsE",
       "stock": 5,
       "descricao": "Álbum conceptual que mistura rap, soul, funk e psicadelismo, centrado numa história de amor complicado."
     },
@@ -348,7 +348,7 @@
       "precoVinil": 24.99,
       "precoCD": 12.99,
       "imagem": "https://m.media-amazon.com/images/I/81BROAmi6KL._UF894,1000_QL80_.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/7tsXPtLqhab1zWeubbf6JH",
       "stock": 5,
       "descricao": "Eminem em modo provocador, com faixas cheias de sarcasmo, humor negro e críticas à sociedade americana."
     },
@@ -361,7 +361,7 @@
       "precoVinil": 33.99,
       "precoCD": 16.99,
       "imagem": "https://muzikercdn.com/uploads/products/4332/433262/thumb_d_gallery_base_7fe2e76b.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/78bpIziExqiI9qztvNFlQu",
       "stock": 5,
       "descricao": "Rock moderno com riffs marcantes, grooves lentos e letras sobre noites longas, desejo e relações complicadas."
     },
@@ -374,7 +374,7 @@
       "precoVinil": 29.49,
       "precoCD": 14.49,
       "imagem": "https://i.scdn.co/image/ab67616d0000b273bad43d8367d0e0809db0db8a",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/2CuI0AW9srCLZLMStZMift",
       "stock": 5,
       "descricao": "EDM e house radiofónico, cheio de colaborações e refrões feitos para as pistas de dança."
     },
@@ -387,7 +387,7 @@
       "precoVinil": 34.99,
       "precoCD": 16.99,
       "imagem": "https://m.media-amazon.com/images/I/71x1HV4YEUL._UF1000,1000_QL80_.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/4PgleR09JVnm3zY1fW3XBA",
       "stock": 5,
       "descricao": "Explosão de funk, R&B e pop com inspiração nos anos 80/90, cheia de energia e bom humor."
     },
@@ -400,7 +400,7 @@
       "precoVinil": 27.99,
       "precoCD": 15.49,
       "imagem": "https://m.media-amazon.com/images/I/61T9dy+3JiL._UF894,1000_QL80_.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/3kjHLu1pL7tdY88GFwEkl6",
       "stock": 5,
       "descricao": "Regresso do alter-ego de Eminem, com rimas rápidas, produção moderna e referências à sua própria carreira."
     },
@@ -413,7 +413,7 @@
       "precoVinil": 32.99,
       "precoCD": 15.99,
       "imagem": "https://f4.bcbits.com/img/a3777569265_16.jpg",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/2bP8L39GYpPSN2wnNqTJJr",
       "stock": 5,
       "descricao": "Obra icónica do barroco, com quatro concertos para violino que representam as estações do ano com grande expressividade."
     },
@@ -426,7 +426,7 @@
       "precoVinil": 34.49,
       "precoCD": 16.49,
       "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZp6WfLf4i7XL9Pugt7FE0Z0EGKEZZGDFGXw&s",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/3PFXzb8ySwZMDjyD25c6Bt",
       "stock": 5,
       "descricao": "Uma das sinfonias mais famosas de sempre, com o icónico motivo inicial e uma viagem dramática do caos à vitória."
     },
@@ -439,9 +439,140 @@
       "precoVinil": 33.99,
       "precoCD": 16.99,
       "imagem": "https://i.scdn.co/image/ab67616d0000b273f7f68584c8a9ed23cbee3377",
-      "spotify": null,
+      "spotify": "https://open.spotify.com/embed/album/1NSS3nU2Nus4U8VPzGF8st",
       "stock": 5,
       "descricao": "Última obra de Mozart, um requiem intenso e emotivo cheio de coros poderosos e passagens orquestrais dramáticas."
+    }
+  ,
+    {
+      "id": 42,
+      "nome": "Viva La Vida",
+      "artista": "Coldplay",
+      "genero": "Pop",
+      "ano": 2008,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://upload.wikimedia.org/wikipedia/pt/d/d7/Vivalavida.jpg",
+      "spotify": "https://open.spotify.com/embed/album/1CEODgTmTwLyabvwd7HBty",
+      "stock": 5,
+      "descricao": "Pop orquestrado e emotivo, com arranjos grandiosos e refrões anthemicós sobre perda e redenção."
+    },
+    {
+      "id": 43,
+      "nome": "Parachutes",
+      "artista": "Coldplay",
+      "genero": "Pop",
+      "ano": 2000,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Coldplay_-_Parachutes.png/250px-Coldplay_-_Parachutes.png",
+      "spotify": "https://open.spotify.com/embed/album/6ZG5lRT77aJ3btmArcykra",
+      "stock": 5,
+      "descricao": "Debut íntimo e melódico, composto por baladas acústicas e atmosferas suaves que definiram o som inicial da banda."
+    },
+    {
+      "id": 44,
+      "nome": "Dookie",
+      "artista": "Green Day",
+      "genero": "Rock",
+      "ano": 1994,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/d4/64/05/353492/1507-1/tsp20140331190610/Dookie-180g.jpg",
+      "spotify": "https://open.spotify.com/embed/album/4uG8q3GPuWHQlRbswMIRS6",
+      "stock": 5,
+      "descricao": "Punk-rock energético e direto, repleto de riffs acelerados e hinos adolescentes que marcaram a cena dos anos 90."
+    },
+    {
+      "id": 45,
+      "nome": "American Idiot",
+      "artista": "Green Day",
+      "genero": "Rock",
+      "ano": 2004,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/e/ed/Green_Day_-_American_Idiot_album_cover.png",
+      "spotify": "https://open.spotify.com/embed/album/5dN7F9DV0Qg1XRdIgW8rke",
+      "stock": 5,
+      "descricao": "Ópera-punk altamente teatral e crítica, com letras políticas e singles explosivos que renovaram a força da banda."
+    },
+    {
+      "id": 46,
+      "nome": "Californication",
+      "artista": "Red Hot Chilli Peppers",
+      "genero": "Rock",
+      "ano": 1999,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/RedHotChiliPeppersCalifornication.jpg/250px-RedHotChiliPeppersCalifornication.jpg",
+      "spotify": "https://open.spotify.com/embed/album/0fLhefnjlIV3pGNF9Wo8CD",
+      "stock": 5,
+      "descricao": "Rock alternativo com letras introspectivas e guitarras melódicas, misturando funk, psicodelia e melodias memoráveis."
+    },
+    {
+      "id": 47,
+      "nome": "Enema Of The State",
+      "artista": "Blink-182",
+      "genero": "Rock",
+      "ano": 1999,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://i.scdn.co/image/ab67616d00001e026da502e35a7a3e48de2b0f74",
+      "spotify": "https://open.spotify.com/embed/album/652N05EcNH1a4bIlUixQE2",
+      "stock": 5,
+      "descricao": "Pop-punk irreverente e divertido, com melodias contagiantes e letras sobre a adolescência e o humor juvenil."
+    },
+    {
+      "id": 48,
+      "nome": "Americana",
+      "artista": "The Offspring",
+      "genero": "Rock",
+      "ano": 1998,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://static.fnac-static.com/multimedia/Images/PT/NR/a7/2a/0f/993959/1540-1/tsp20161122144315/Americana.jpg",
+      "spotify": "https://open.spotify.com/embed/album/2RNTBrSO8U8XjjEj9RVvZ5",
+      "stock": 5,
+      "descricao": "Punk-rock melódico com refrões cativantes e temas que exploram alienação, identidade e crítica social."
+    },
+    {
+      "id": 49,
+      "nome": "The Black Parade",
+      "artista": "My Chemical Romance",
+      "genero": "Rock",
+      "ano": 2006,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/e/ea/Blackparadecover.jpg",
+      "spotify": "https://open.spotify.com/embed/album/0FZK97MXMm5mUQ8mtudjuK",
+      "stock": 5,
+      "descricao": "Rock teatral e emocional, com produção épica e temas sobre morte, memória e rituais de passagem."
+    },
+    {
+      "id": 50,
+      "nome": "Nevermind",
+      "artista": "Nirvana",
+      "genero": "Rock",
+      "ano": 1991,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGrSvPMV--S3QweD2w8ZHacPtBhg0_UFV_kA&s",
+      "spotify": "https://open.spotify.com/embed/album/2UJcKiJxNryhL050F5Z1Fk",
+      "stock": 5,
+      "descricao": "Marco do grunge, cru e poderoso, com riffs icónicos e letras que capturam a angústia e revolta da juventude."
+    },
+    {
+      "id": 51,
+      "nome": "Ten",
+      "artista": "Pearl Jam",
+      "genero": "Rock",
+      "ano": 1991,
+      "precoVinil": 24.99,
+      "precoCD": 12.99,
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/6/6f/Pearl_Jam_Ten_Alt_Cover.jpg",
+      "spotify": "https://open.spotify.com/embed/album/5B4PYA7wNN4WdEXdIJu58a",
+      "stock": 5,
+      "descricao": "Rock alternativo intenso, com vocais expressivos e guitarras climáticas — um pilar do movimento grunge."
     }
   ]
 }

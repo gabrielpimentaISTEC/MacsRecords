@@ -48,17 +48,12 @@
         <h1 class="fw-bold text-white text-center">Catálogo</h1>
         <p class="text-white text-center mb-4">Explora discos em vinil e CD</p>
         <div class="row">
-            <!-- Sidebar de filtros -->
             <aside class="col-md-3 mb-4 mb-md-0">
                 <h5 class="text-white mb-3">Filtrar</h5>
-
-                <!-- Search -->
                 <div class="mb-3">
                     <label class="form-label text-white">Procurar</label>
                     <input type="text" id="filtroPesquisa" class="form-control" placeholder="Nome ou artista">
                 </div>
-
-                <!-- Filtrar por (ordenar) -->
                 <div class="mb-3">
                     <label class="form-label text-white">Filtrar por</label>
                     <select id="filtroOrdenacao" class="form-select">
@@ -68,8 +63,6 @@
                         <option value="preco-desc">Preço decrescente</option>
                     </select>
                 </div>
-
-                <!-- Género -->
                 <div class="mb-3">
                     <label class="form-label text-white d-block">Género</label>
                     <div class="dropdown w-100">
@@ -100,8 +93,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Preço (range sliders) -->
                 <div class="mb-3">
                     <label class="form-label text-white d-block">Preço (€)</label>
                     <small class="text-light d-block mb-1">
@@ -112,8 +103,6 @@
                         <input type="range" id="filtroPrecoMax" class="form-range" min="0" max="50" step="1" value="50">
                     </div>
                 </div>
-
-                <!-- Ano (range sliders) -->
                 <div class="mb-3">
                     <label class="form-label text-white d-block">Ano</label>
                     <small class="text-light d-block mb-1">
@@ -132,7 +121,6 @@
                     
                 </div>
 
-                <!-- Paginas -->
                 <nav class="mt-4" aria-label="Paginação catálogo">
                     <div id="paginacao"></div>
                 </nav>
@@ -168,7 +156,6 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
             <div class="modal-body" id="carrinhoModalBody">
-                <!-- Conteúdo a preencher pelo JavaScript -->
             </div>
         </div>
     </div>

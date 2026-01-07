@@ -86,18 +86,18 @@
                         <h5 class="mb-0"><i class="fa fa-shopping-bag me-2"></i>Resumo do Pedido</h5>
                     </div>
                     <div class="card-body" id="resumoPedido">
-                        <!-- Preenchido pelo JavaScript -->
+
                     </div>
                 </div>
 
-                <!-- Cartão de Crédito Visual -->
+                <!-- Cartão de Crédito -->
                 <div class="card mb-4">
                     <div class="card-header bg-dark text-white">
                         <h5 class="mb-0"><i class="fa fa-credit-card me-2"></i>Dados do Cartão</h5>
                     </div>
                     <div class="card-body">
                         <form id="formPagamento" onsubmit="finalizarPagamento(event)">
-                            <!-- Cartão Visual -->
+                            <!-- Cartão Template -->
                             <div class="credit-card-wrapper mb-4">
                                 <div class="credit-card" id="creditCard">
                                     <div class="card-chip"></div>
@@ -157,7 +157,7 @@
 <script src="script.js"></script>
 <script>
 // ============================================
-// CHECKOUT - INICIALIZAÇÃO
+// Javascript - checkout
 // ============================================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // Carregar dados de entrega se existirem
+    // Carregar dados de entrega
     const dadosEntregaSalvos = JSON.parse(localStorage.getItem('dadosEntrega')) || {};
     if (dadosEntregaSalvos.nome) {
         document.getElementById('checkoutNome').value = dadosEntregaSalvos.nome || '';
@@ -179,16 +179,15 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('checkoutCidade').value = dadosEntregaSalvos.cidade || '';
     }
 
-    // Mostrar resumo
     mostrarResumoPedido(carrinho);
     
-    // Event listeners para atualizar cartão visual
+    // Event para atualizar cartão visual
     const numeroInput = document.getElementById('numeroCartao');
     const nomeInput = document.getElementById('nomeCartao');
     const validadeInput = document.getElementById('validadeCartao');
     
     numeroInput.addEventListener('input', (e) => {
-        // Formatar número com espaços a cada 4 dígitos
+        // Formatar número cartão
         let value = e.target.value.replace(/\s/g, '');
         value = value.replace(/(.{4})/g, '$1 ').trim();
         if (value.length > 19) value = value.substring(0, 19);
@@ -202,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     validadeInput.addEventListener('input', (e) => {
-        // Formatar validade MM/AA
+        // Formatar MM/AA
         let value = e.target.value.replace(/\D/g, '');
         if (value.length >= 2) {
             value = value.substring(0, 2) + '/' + value.substring(2, 4);
@@ -258,7 +257,6 @@ function atualizarCartaoVisual() {
     const nome = document.getElementById('nomeCartao').value.toUpperCase() || 'NOME NO CARTÃO';
     const validade = document.getElementById('validadeCartao').value || 'MM/AA';
     
-    // Formatar número do cartão
     let numeroFormatado = numero.replace(/(.{4})/g, '$1 ').trim();
     if (numeroFormatado.length > 19) numeroFormatado = numeroFormatado.substring(0, 19);
     if (!numeroFormatado) numeroFormatado = '#### #### #### ####';
@@ -278,7 +276,6 @@ function finalizarPagamento(event) {
         return;
     }
     
-    // Guardar dados de entrega
     const dadosEntrega = {
         nome: document.getElementById('checkoutNome').value,
         email: document.getElementById('checkoutEmail').value,
@@ -295,17 +292,14 @@ function finalizarPagamento(event) {
         return;
     }
     
-    // Simular processamento
     const total = carrinho.reduce((sum, item) => sum + (item.preco * item.quantidade), 0);
     
-    // Limpar dados
+    // Limpar dados apos compra
     localStorage.removeItem('carrinho');
     localStorage.removeItem('dadosEntrega');
     
-    // Mostrar confirmação
     alert(`Pagamento confirmado!\n\nObrigado pela sua compra, ${dadosEntrega.nome}!\n\nTotal pago: €${total.toFixed(2).replace('.', ',')}\n\nReceberá um email de confirmação em breve.`);
     
-    // Redirecionar para catálogo
     window.location.href = 'catalogo.html';
 }
 </script>
