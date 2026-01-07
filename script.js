@@ -6,7 +6,7 @@ let catalogoFiltrado = [];
 let paginaAtual = 1;
 const ITENS_POR_PAGINA = 12;
 
-// Sistema de carrinho (persistência via localStorage)
+// Sistema de carrinho (via localStorage)
 let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
 // ============================================
