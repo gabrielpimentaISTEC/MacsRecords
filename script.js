@@ -174,6 +174,57 @@ fetch("catalogo.json")
       item.precoBase = obterPrecoBase(item);
     });
 
+    // Ajustar min/max dos sliders de preço e ano com base no catálogo
+    (function ajustarSliders() {
+      const precoBases = catalogo.map(i => (typeof i.precoBase === 'number' ? i.precoBase : obterPrecoBase(i))).filter(n => n != null && !isNaN(n));
+      let precoMinDefault = 0, precoMaxDefault = 50;
+      if (precoBases.length) {
+        const minP = Math.floor(Math.min(...precoBases));
+        const maxP = Math.ceil(Math.max(...precoBases));
+        precoMinDefault = Math.min(minP, maxP);
+        precoMaxDefault = Math.max(maxP, precoMinDefault + 1);
+      }
+
+      const precoMinInput = document.getElementById('filtroPrecoMin');
+      const precoMaxInput = document.getElementById('filtroPrecoMax');
+      const precoMinLabel = document.getElementById('labelPrecoMin');
+      const precoMaxLabel = document.getElementById('labelPrecoMax');
+
+      if (precoMinInput && precoMaxInput) {
+        precoMinInput.setAttribute('min', String(precoMinDefault));
+        precoMinInput.setAttribute('max', String(precoMaxDefault));
+        precoMaxInput.setAttribute('min', String(precoMinDefault));
+        precoMaxInput.setAttribute('max', String(precoMaxDefault));
+        precoMinInput.value = String(precoMinDefault);
+        precoMaxInput.value = String(precoMaxDefault);
+        if (precoMinLabel) precoMinLabel.textContent = String(precoMinDefault);
+        if (precoMaxLabel) precoMaxLabel.textContent = String(precoMaxDefault);
+      }
+
+      const anos = catalogo.map(i => Number(i.ano)).filter(n => !isNaN(n));
+      let anoMinDefault = 1960, anoMaxDefault = 2025;
+      if (anos.length) {
+        anoMinDefault = Math.min(...anos);
+        anoMaxDefault = Math.max(...anos);
+      }
+
+      const anoMinInput = document.getElementById('filtroAnoMin');
+      const anoMaxInput = document.getElementById('filtroAnoMax');
+      const anoMinLabel = document.getElementById('labelAnoMin');
+      const anoMaxLabel = document.getElementById('labelAnoMax');
+
+      if (anoMinInput && anoMaxInput) {
+        anoMinInput.setAttribute('min', String(anoMinDefault));
+        anoMinInput.setAttribute('max', String(anoMaxDefault));
+        anoMaxInput.setAttribute('min', String(anoMinDefault));
+        anoMaxInput.setAttribute('max', String(anoMaxDefault));
+        anoMinInput.value = String(anoMinDefault);
+        anoMaxInput.value = String(anoMaxDefault);
+        if (anoMinLabel) anoMinLabel.textContent = String(anoMinDefault);
+        if (anoMaxLabel) anoMaxLabel.textContent = String(anoMaxDefault);
+      }
+    })();
+
     catalogoFiltrado = [...catalogo];
     paginaAtual = 1;
 
@@ -432,49 +483,72 @@ function renderPaginacao(totalItens) {
 // ============================================
 
 function aplicarFiltros() {
-  const pesquisa = document.getElementById("filtroPesquisa").value.toLowerCase().trim();
-  const ordenacao = document.getElementById("filtroOrdenacao").value;
+  function normalize(str) {
+    return (str || "").toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
 
-  const generosSelecionados = Array.from(document.querySelectorAll(".filtro-genero:checked")).map(i => i.value.trim());
+  function parseNumberInput(id) {
+    const el = document.getElementById(id);
+    if (!el) return null;
+    const v = el.value;
+    if (v === "" || v == null) return null;
+    const n = Number(v);
+    if (isNaN(n)) return null;
+    // Se o valor é igual ao limite (min para inputs "Min", max para "Max"), tratar como não filtrado
+    const minAttr = el.getAttribute('min');
+    const maxAttr = el.getAttribute('max');
+    if (id.toLowerCase().includes('min') && minAttr != null && String(n) === String(minAttr)) return null;
+    if (id.toLowerCase().includes('max') && maxAttr != null && String(n) === String(maxAttr)) return null;
+    return n;
+  }
 
-  // Atualizar label do dropdown de género com os géneros selecionados
+  const pesquisaEl = document.getElementById("filtroPesquisa");
+  const ordenacaoEl = document.getElementById("filtroOrdenacao");
+  const pesquisa = pesquisaEl ? normalize(pesquisaEl.value.trim()) : "";
+  const ordenacao = ordenacaoEl ? ordenacaoEl.value : "";
+
+  const generoEls = Array.from(document.querySelectorAll(".filtro-genero"));
+  // Usar atributo data-normalizado se existir, senão normalizar o value
+  const generosSelecionados = generoEls.filter(e => e.checked).map(e => e.dataset.normalizado || normalize(e.value.trim()));
+
   const btnGenero = document.getElementById("btnGeneroDropdown");
   if (btnGenero) {
     if (!generosSelecionados.length) {
       btnGenero.textContent = "Selecionar género";
     } else {
-      btnGenero.textContent = generosSelecionados.join(", ");
+      btnGenero.textContent = generoEls.filter(e => e.checked).map(e => e.value.trim()).join(", ");
     }
   }
 
-  const precoMin = Number(document.getElementById("filtroPrecoMin").value) || null;
-  const precoMax = Number(document.getElementById("filtroPrecoMax").value) || null;
-  const anoMin = Number(document.getElementById("filtroAnoMin").value) || null;
-  const anoMax = Number(document.getElementById("filtroAnoMax").value) || null;
+  const precoMin = parseNumberInput("filtroPrecoMin");
+  const precoMax = parseNumberInput("filtroPrecoMax");
+  const anoMin = parseNumberInput("filtroAnoMin");
+  const anoMax = parseNumberInput("filtroAnoMax");
 
   let filtrado = catalogo.filter(item => {
-    // Search por nome ou artista
+    // Se não houver filtros ativos, retorna tudo
+    const nenhumFiltro = !pesquisa && !generosSelecionados.length && precoMin == null && precoMax == null && anoMin == null && anoMax == null;
+    if (nenhumFiltro) return true;
+
     if (pesquisa) {
-      const nome = item.nome.toLowerCase();
-      const artista = item.artista.toLowerCase();
+      const nome = normalize(item.nome);
+      const artista = normalize(item.artista);
       if (!nome.includes(pesquisa) && !artista.includes(pesquisa)) return false;
     }
 
-    // Género (checkboxes)
     if (generosSelecionados.length) {
-      const itemGenero = (item.genero || "").trim();
-      const match = generosSelecionados.some(gen => gen.trim() === itemGenero);
-      if (!match) {
-        return false;
-      }
+      const itemGenero = normalize(item.genero || "");
+      const match = generosSelecionados.some(gen => gen === itemGenero || itemGenero.includes(gen) || gen.includes(itemGenero));
+      if (!match) return false;
     }
 
     const precoBase = typeof item.precoBase === "number" ? item.precoBase : obterPrecoBase(item);
-    if (precoMin !== null && precoBase < precoMin) return false;
-    if (precoMax !== null && precoBase > precoMax) return false;
+    if (precoMin != null && precoBase < precoMin) return false;
+    if (precoMax != null && precoBase > precoMax) return false;
 
-    if (anoMin !== null && item.ano < anoMin) return false;
-    if (anoMax !== null && item.ano > anoMax) return false;
+    const itemAno = typeof item.ano === 'number' ? item.ano : Number(item.ano);
+    if (anoMin != null && itemAno < anoMin) return false;
+    if (anoMax != null && itemAno > anoMax) return false;
 
     return true;
   });
@@ -592,7 +666,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ============================================
-// PÁGINA DE PRODUTO (legado - não utilizada)
+// PÁGINA DE PRODUTO
 // ============================================
 
 function initProdutoPage() {
